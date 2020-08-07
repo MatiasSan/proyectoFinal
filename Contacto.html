@@ -5,107 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ordinary Chile</title>
+
+    <!-- Hojas de estilo -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
 
 
 </head>
 
 <body>
     <!--Menú de navegación-->
-    <header id="topnav">
-        <div class="title">
-            <h1>The Ordinary Chile.</h1>
+
+    <nav class="menu navbar sticky-top navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">The Ordinary Chile.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Brand.html">Brand <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="LosProductos.html#anti">Antioxidantes</a>
+                        <a class="dropdown-item" href="LosProductos.html#limpiadores">Limpiadores</a>
+                        <a class="dropdown-item" href="LosProductos.html#acidos">Ácidos directos</a>
+                        <a class="dropdown-item" href="LosProductos.html#hidra-aceites">Hidratantes y aceites</a>
+                        <a class="dropdown-item" href="LosProductos.html#retinoides">Retinoides</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Articulos.html">Artículos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <nav>
 
-            <img class="logo-nav"
-                src="data:image/png;base64,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"
-                alt="logo The Ordinary" height="60">
-            <a href="index.html" class="nav-enlace">HOME</a>
-            <a href="LaMarca.html" class="nav-enlace">LA MARCA</a>
-            <div class="subnav">
-                <a href="LosProductos.html" class="nav-enlace">LOS PRODUCTOS</a>
-                <div class="subnav-content">
-                    <a class="nav-enlace" href="LosProductos.html#anti">Antioxidantes</a>
-                    <a class="nav-enlace" href="LosProductos.html#limpiadores">Limpiadores</a>
-                    <a class="nav-enlace" href="LosProductos.html#acidos">Ácidos directos</a>
-                    <a class="nav-enlace" href="LosProductos.html#hidra-aceites">Hidratantes y Aceites</a>
-                    <a class="nav-enlace" href="LosProductos.html#retinoides">Retinoides</a>
+    <!--Carrusel de Imagenes-->
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="LaOrdinaria/img5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="LaOrdinaria/img1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="LaOrdinaria/img2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="LaOrdinaria/img6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="LaOrdinaria/img3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="LaOrdinaria/img4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <!--Formularios-->
+
+
+
+    <div class="container contacto encabezado ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class= "header">Contáctanos y enterate de las ultimas novedades</legend>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="lname" name="name" type="text" placeholder="Apellido"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fas fa-envelope-square bigicon"></i></i></span>
+                                <div class="col-md-8">
+                                    <input id="email" name="email" type="text" placeholder="Correo électronico"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-phone-square bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="phone" name="phone" type="text" placeholder="Número"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="message" name="message"
+                                        placeholder="Dejanos tu mensaje aquí. Nos contactaremos lo antes posible."
+                                        rows="7"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
-
-
-
-            <a href="AcercaDeMi.html" class="nav-enlace">ACERCA DE MÍ</a>
-            <a href="Contacto.html" class="nav-enlace">CONTACTO</a>
-        </nav>
-    </header>
-
-
-    <div id="slider">
-
+        </div>
     </div>
-    <hr>
-    <div>
-        <form>
-            <fieldset>
-                <legend>
-                    <h3>¡Contactanos! y enterate de las últimas novedades de la marca.</h3>
-                </legend>
+
+    <!--Pie de página-->
 
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre_apellido" /> <br><br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" /> <br><br>
-                <label for="email">Correo Eléctronico</label>
-                <input type="email" name="email" placeholder="nombre@ejemplo.com" /> <br><br>
-                <label for="sexo">Sexo</label>
-                <select name="sexo">
-                    <option>Hombre</option>
-                    <option>Mujer</option>
-                </select> <br><br>
-                <label for="newslatter">Te gustaría recibir información a tu correo?</label>
-                <input type="radio"/ name="tegustaria">Sí <input type="radio" name="tegustaria" />No <br><br>
-                Dejanos tus comentarios <br>
-                <textarea name="Comentarios" cols="45" rows="5"></textarea> <br><br>
 
-                <input type="submit" value="Enviar Información" />
-                <input type="reset" value="Borrar campos" />
-
-            </fieldset>
-
-
-        </form>
-    </div>
-    <hr>
-
-
-    <footer>
+    <footer id="footer">
         <a class="footer-link" href="https://www.linkedin.com/in/mat%C3%ADas-coleman-villar-78459a182/"
-            target="_blank"><img src="https://image.flaticon.com/icons/svg/1384/1384014.svg" width="50"></a>
-        <a class="footer-link" href="https://twitter.com/MatiSensei" target="_blank"><img
-                src="https://image.flaticon.com/icons/svg/1384/1384017.svg" width="50"></a>
-        <p>Desarrollada por Matías C</p>
+            target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a class="footer-link" href="https://twitter.com/MatiSensei" target="_blank"><i
+                class="fab fa-twitter-square fa-2x"></i></a>
+        <h4><i class="far fa-copyright "></i>Desarrollada por Matías C</h4>
     </footer>
-    <script>
-        var num = 50;
-        var topnav = document.getElementById('topnav');
-        window.onscroll = function () {
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop ||
-                0;
-            if (scrollTop > num) {
-                topnav.style.position = "fixed";
-                topnav.style.top = '0';
-                topnav.style.width = '100%';
-            } else {
-                topnav.style.position = "absolute";
-                topnav.style.top = "0";
-                topnav.style.width = '100%';
-            }
-        }
+
+    <!-- Script para bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
 
 </body>

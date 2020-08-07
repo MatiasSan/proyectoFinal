@@ -4,43 +4,22 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-
-
-
-}
-
-h1 {
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: black;
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-}
-
-h2 {
-    text-align: center;
-    color: black;
-    margin-top: 50px;
-
 }
 
 h3 {
-    width: 50%;
-    text-align: center;
-    margin: 10px auto;
+    font-size: 20px;
+    
 }
 
 
-p {
-    margin: 30px auto;
-    width: 80%;
-    font-weight: normal;
-    line-height: 2;
-    text-align: center;
-}
 
 table {
     margin-left: auto;
@@ -57,29 +36,12 @@ footer {
 
 }
 
-
-nav {
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #E0DDD9;
-    text-align: left;
-}
-
-fieldset {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
+p {
+    line-height: 40px;
 }
 
 li {
-    font-weight: normal;
-    width: 50%;
-    margin: 10px auto;
-    line-height: 2;
+    line-height: 40px;
 }
 
 
@@ -91,26 +53,9 @@ hr {
     margin: 100px auto;
 }
 
-
-
-table {
-    border-collapse: collapse;
-
+section {
+    text-align: justify;
 }
-
-th,
-td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #E0DDD9;
-    ;
-    color: white;
-}
-
-
 
 
 
@@ -120,40 +65,22 @@ tr:hover {
 
 /*Barra de navegación*/
 
-.subnav-content {
+.menu {
 
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.subnav-content a {
-    display: block;
-}
-
-.subnav:hover .subnav-content {
-    display: block;
-
+    background-color: #e0ddd9;
 }
 
 
-.nav-enlace {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #E0DDD9;
+
+.fab {
     color: black;
-    text-decoration-line: none;
+}
+
+.navbar-brand {
+    margin-left: 7%;
 }
 
 
-
-.nav-enlace:hover {
-    background-color: #f0f0f0;
-}
-
-.logo-nav {
-    height: 60px;
-}
 
 .laMarca {
     display: block;
@@ -169,9 +96,17 @@ tr:hover {
 
 }
 
+.image-home {
+    width: 40vw;
+}
+
 .footer-link {
 
-    margin: 4
+    margin: 5% 2%
+}
+
+.copy {
+    padding-top: 50px;
 }
 
 /* Intento de Grid */
@@ -181,7 +116,7 @@ tr:hover {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 20px 20px 100px 80px;
+    grid-template-rows: 60% 10% 10% 10% 10%;
     justify-items: center;
 }
 
@@ -199,111 +134,85 @@ tr:hover {
 
 /* Cards Productos */
 
-.container {
+.items {
     display: flex;
     justify-content: center;
     text-align: center;
-    
+
 
 }
 
 .item {
-    position: static;
-    width: 40%;
-    height: 20rem;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    width: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    
+
 }
 
 .item:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
-
-
-
-
-/* Animación */
-
-
-#slider {
-    width: 100%;
-    height: 800px;
-    background: url(LaOrdinaria/img1.jpg);
+.titulo {
     margin: 100px auto;
-    animation: slide 20s infinite;
+
+
+
 }
 
-@keyframes slide {
-    20% {
-        background: url(LaOrdinaria/img2.jpg);
-    }
+/* Contacto */
 
-    40% {
-        background: url(LaOrdinaria/img3.jpg);
-    }
+.header {
 
-    60% {
-        background: url(LaOrdinaria/img4.jpg);
-    }
-
-    80% {
-        background: url(LaOrdinaria/img5.jpg);
-    }
-
-    100% {
-        background: url(LaOrdinaria/img1.jpg);
-    }
+    color: black;
+    font-size: 27px;
+    padding: 10px;
+    padding-top: 40px;
 }
 
-/*Cortes media querie */
+.bigicon {
+    font-size: 35px;
+    color: #E0DDD9;
+}
+
+
+/*Articulos y contenido*/
+
+.encabezado {
+    text-align: left;
+    margin: 10% 30% 10% 8%;
+    padding: 7% 0;
+
+}
+
+.encabezado2 {
+    text-align: right;
+    margin: 10% 30% 10% 8%;
+    padding: 7% 0;
+    
+
+}
+
+
+
+
+.grid {
+    text-align: left;
+}
+
+.sub-titulo, .lee {
+    font-size: 15px;
+    margin: 30px 0;
+    color: #E0DDD9;
+}
+
+
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
 
-    h1 {
-        text-align: left;
-        color: black;
-        margin-top: 50px;
-    }
-
-    .logo-nav {
-        display: none;
-    }
-
-    .nav-enlace {
-        margin: 10px 0;
-        background-color: #ddd;
-    }
-
-    .nav-button {
-        display: inline-block;
-    }
-
-    header {
-        position: static;
-    }
-
-    .container {
+    .contenedor {
         display: inline;
-        flex-flow: row wrap;
-        justify-content: left;
-
     }
-
-    #slider {
-        display: none;
-    }
-
-
-
 }
+    
