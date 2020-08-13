@@ -1,0 +1,149 @@
+@charset "UTF-8";
+.menu {
+  background-color: #E0DDD9;
+}
+
+.navbar-brand {
+  margin-left: 7%;
+}
+
+footer {
+  width: 100%;
+  background-color: #E0DDD9;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__link {
+  color: black;
+  margin: 5% 2%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 40px;
+}
+
+li {
+  line-height: 40px;
+}
+
+section {
+  text-align: justify;
+}
+
+.product_img {
+  width: 40vw;
+}
+
+.copy {
+  padding-top: 50px;
+}
+
+/* Grid index */
+.contenedor {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 60% 10% 10% 10% 10%;
+      grid-template-rows: 60% 10% 10% 10% 10%;
+  justify-items: center;
+}
+
+.item {
+  width: 20vw;
+}
+
+#product {
+  text-align: center;
+}
+
+/* Articulos */
+.encabezado {
+  text-align: left;
+  margin: 10% 30% 10% 8%;
+  padding: 7% 0;
+}
+
+.encabezado2 {
+  text-align: right;
+  margin: 10% 30% 10% 8%;
+  padding: 7% 0;
+}
+
+.grid {
+  text-align: left;
+}
+
+.sub-titulo, .lee {
+  font-size: 15px;
+  margin: 30px 0;
+  color: #E0DDD9;
+}
+
+/*Sección Contacto */
+.header {
+  color: black;
+  font-size: 27px;
+  padding: 10px;
+  padding-top: 40px;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #E0DDD9;
+}
+
+/* Cards Productos */
+.item {
+  width: 20vw;
+}
+
+#product {
+  text-align: center;
+}
+
+.titulo {
+  margin: 100px auto;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    display: inline;
+  }
+  .item {
+    width: 40vw;
+  }
+  .card {
+    margin-left: 55px;
+    margin-right: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .encabezado {
+    margin-left: 55px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
