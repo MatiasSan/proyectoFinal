@@ -13,6 +13,7 @@ footer {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: 20px;
 }
 
 .footer__link {
@@ -37,6 +38,11 @@ h6 {
 
 h3 {
   font-size: 20px;
+}
+
+.row {
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 p {
